@@ -1,0 +1,34 @@
+NR. 9
+Structuri de date – probă practică
+Se da un graf orientat ponderat prin urmatoarele informatii (datele se citesc dintr-un fisier, n –
+numarul de noduri, m- nr de arce):
+n m 
+i1 j1 cost_i1_j1
+i2 j2 cost_i2_j2
+Să se construiescă și să se afișeze matricea de adiacență.
+Citire din fisier, alocarea memoriei, completarea matricei
+1 p
+Să se verifice dacă digraful are noduri izolate 0,5 p
+Sa se scrie o functie iterativă pentru afisarea nodurilor digrafului in adancime (DFS)
+ Funcțiile pentru stivă 1,5 p
+3 p
+Să se verifice dacă au fost parcurse toate nodurile digrafului (pornind din 6 sau 8) 1 p
+Nodurile in parcurgerea DFS se insereaza intr-o lista liniara (alocare dinamica): 
+declarare structura, functia de inserare, afisare lista
+1.5
+Sa se inverseze legaturile in lista, fara structuri sau resurse de memorie aditionale. 1
+Sa se stearga din lista elementul de valoare maxima 1
+Oficiu 1 p
+Indicatie:
+Se citesc datele din fisierul inclus in folder-ul aferent subiectului de examen.
+Exemplu de citire a datelor din fisier:
+#include <iostream>
+#include <fstream>
+using namespace std;
+ifstream fs;
+fs.open("data.txt");
+fs >> n;
+fs >> m;
+alocare memorie
+…… citire date pentru matricea de adiacenta
+fs.close();
